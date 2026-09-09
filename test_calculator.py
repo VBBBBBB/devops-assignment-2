@@ -18,7 +18,7 @@ def test_divide():
     with pytest.raises(ValueError):
         divide(10, 0)
 
-# Intentional error test to demonstrate CI failure initially
+# Corrected test to demonstrate passing CI workflow
 def test_intentional_failure():
-    # This assertion is intentionally incorrect: 2 + 2 != 5
-    assert add(2, 2) == 5, "Intentional failure for CI demonstration"
+    assert add(2, 2) == 4
+
